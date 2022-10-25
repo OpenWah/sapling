@@ -1,0 +1,138 @@
+USE16
+
+ORG 0X7C00
+
+JMP Boot
+
+Boot:
+mov al, "S"
+mov ah, 0x0e
+int 0x10
+
+mov al, "a"
+mov ah, 0x0e
+int 0x10
+
+mov al, "p"
+mov ah, 0x0e
+int 0x10
+
+mov al, "l"
+mov ah, 0x0e
+int 0x10
+
+mov al, "i"
+mov ah, 0x0e
+int 0x10
+
+mov al, "n"
+mov ah, 0x0e
+int 0x10
+
+mov al, "g"
+mov ah, 0x0e
+int 0x10
+
+mov al, " "
+mov ah, 0x0e
+int 0x10
+
+mov al, "B"
+mov ah, 0x0e
+int 0x10
+
+mov al, "o"
+mov ah, 0x0e
+int 0x10
+
+mov al, "o"
+mov ah, 0x0e
+int 0x10
+
+mov al, "t"
+mov ah, 0x0e
+int 0x10
+
+mov al, "L"
+mov ah, 0x0e
+int 0x10
+
+mov al, "o"
+mov ah, 0x0e
+int 0x10
+
+mov al, "a"
+mov ah, 0x0e
+int 0x10
+
+mov al, "d"
+mov ah, 0x0e
+int 0x10
+
+mov al, "e"
+mov ah, 0x0e
+int 0x10
+
+mov al, "r"
+mov ah, 0x0e
+int 0x10
+
+mov al, " "
+mov ah, 0x0e
+int 0x10
+
+mov al, "t"
+mov ah, 0x0e
+int 0x10
+
+mov al, "e"
+mov ah, 0x0e
+int 0x10
+
+mov al, "s"
+mov ah, 0x0e
+int 0x10
+
+mov al, "t"
+mov ah, 0x0e
+int 0x10
+
+mov al, " "
+mov ah, 0x0e
+int 0x10
+
+mov al, "0"
+mov ah, 0x0e
+int 0x10
+mov al, "2"
+mov ah, 0x0e
+int 0x10
+
+mov al, " "
+mov ah, 0x0e
+int 0x10
+
+mov al, "C"
+mov ah, 0x0e
+int 0x10
+
+mov al, "a"
+mov ah, 0x0e
+int 0x10
+
+mov al, "t"
+mov ah, 0x0e
+int 0x10
+
+mov al, "t"
+mov ah, 0x0e
+int 0x10
+
+mov al, "o"
+mov ah, 0x0e
+int 0x10
+
+hlt
+
+times 510-($-$$) db 0
+dw 0xaa55
